@@ -1,0 +1,366 @@
+:root {
+  /* ---- COLORS ---- */
+  --silver-chalice-0: 0deg 0% 98%;
+  --color-silver-chalice-0: hsl(var(--silver-chalice-0));
+  --silver-chalice-50: 0deg 0% 92%;
+  --color-silver-chalice-50: hsl(var(--silver-chalice-50));
+  --silver-chalice-100: 0deg 0% 80%;
+  --color-silver-chalice-100: hsl(var(--silver-chalice-100));
+  --silver-chalice-200: 0deg 0% 70%;
+  --color-silver-chalice-200: hsl(var(--silver-chalice-200));
+  --silver-chalice-300: 0deg 0% 53%;
+  --color-silver-chalice-300: hsl(var(--silver-chalice-300));
+  --silver-chalice-400: 0deg 0% 35%;
+  --color-silver-chalice-400: hsl(var(--silver-chalice-400));
+  --silver-chalice-500: 0deg 0% 22%;
+  --color-silver-chalice-500: hsl(var(--silver-chalice-500));
+  --silver-chalice-600: 0deg 0% 17%;
+  --color-silver-chalice-600: hsl(var(--silver-chalice-600));
+  --silver-chalice-700: 0deg 0% 13%;
+  --color-silver-chalice-700: hsl(var(--silver-chalice-700));
+  --silver-chalice-800: 0deg 0% 10%;
+  --color-silver-chalice-800: hsl(var(--silver-chalice-800));
+  --silver-chalice-900: 0deg 0% 7%;
+  --color-silver-chalice-900: hsl(var(--silver-chalice-900));
+  --silver-chalice-1000: 0deg 0% 4%;
+  --color-silver-chalice-1000: hsl(var(--silver-chalice-1000));
+
+  --iris-0: 250deg 100% 99%;
+  --color-iris-0: hsl(var(--iris-0));
+  --iris-50: 253deg 100% 94%;
+  --color-iris-50: hsl(var(--iris-50));
+  --iris-100: 252deg 100% 87%;
+  --color-iris-100: hsl(var(--iris-100));
+  --iris-200: 252deg 100% 80%;
+  --color-iris-200: hsl(var(--iris-200));
+  --iris-300: 252deg 100% 72%;
+  --color-iris-300: hsl(var(--iris-300));
+  --iris-400: 252deg 86% 63%;
+  --color-iris-400: hsl(var(--iris-400));
+  --iris-500: 251deg 66% 52%;
+  --color-iris-500: hsl(var(--iris-500));
+  --iris-600: 251deg 60% 41%;
+  --color-iris-600: hsl(var(--iris-600));
+  --iris-700: 252deg 61% 30%;
+  --color-iris-700: hsl(var(--iris-700));
+  --iris-800: 252deg 61% 20%;
+  --color-iris-800: hsl(var(--iris-800));
+  --iris-900: 252deg 63% 9%;
+  --color-iris-900: hsl(var(--iris-900));
+
+  --citrine-0: 50deg 60% 98%;
+  --color-citrine-0: hsl(var(--citrine-0));
+  --citrine-50: 53deg 71% 93%;
+  --color-citrine-50: hsl(var(--citrine-50));
+  --citrine-100: 52deg 79% 85%;
+  --color-citrine-100: hsl(var(--citrine-100));
+  --citrine-200: 53deg 84% 77%;
+  --color-citrine-200: hsl(var(--citrine-200));
+  --citrine-300: 53deg 87% 70%;
+  --color-citrine-300: hsl(var(--citrine-300));
+  --citrine-400: 53deg 88% 62%;
+  --color-citrine-400: hsl(var(--citrine-400));
+  --citrine-500: 53deg 80% 50%;
+  --color-citrine-500: hsl(var(--citrine-500));
+  --citrine-600: 54deg 100% 40%;
+  --color-citrine-600: hsl(var(--citrine-600));
+  --citrine-700: 54deg 100% 35%;
+  --color-citrine-700: hsl(var(--citrine-700));
+  --citrine-800: 54deg 100% 26%;
+  --color-citrine-800: hsl(var(--citrine-800));
+  --citrine-900: 54deg 100% 18%;
+  --color-citrine-900: hsl(var(--citrine-900));
+
+  --folly-0: 351deg 100% 99%;
+  --color-folly-0: hsl(var(--folly-0));
+  --folly-50: 350deg 100% 94%;
+  --color-folly-50: hsl(var(--folly-50));
+  --folly-100: 347deg 100% 87%;
+  --color-folly-100: hsl(var(--folly-100));
+  --folly-200: 343deg 100% 80%;
+  --color-folly-200: hsl(var(--folly-200));
+  --folly-300: 343deg 100% 73%;
+  --color-folly-300: hsl(var(--folly-300));
+  --folly-400: 347deg 100% 65%;
+  --color-folly-400: hsl(var(--folly-400));
+  --folly-500: 340deg 100% 47%;
+  --color-folly-500: hsl(var(--folly-500));
+  --folly-600: 340 100% 41%;
+  --color-folly-600: hsl(var(--folly-600));
+  --folly-700: 340deg 100% 32%;
+  --color-folly-700: hsl(var(--folly-700));
+  --folly-800: 340deg 100% 22%;
+  --color-folly-800: hsl(var(--folly-800));
+  --folly-900: 340 100% 22%;
+  --color-folly-900: hsl(var(--folly-900));
+
+  --turquoise-0: 171deg 100% 97%;
+  --color-turquoise-0: hsl(var(--turquoise-0));
+  --turquoise-50: 172deg 100% 93%;
+  --color-turquoise-50: hsl(var(--turquoise-50));
+  --turquoise-100: 170deg 100% 87%;
+  --color-turquoise-100: hsl(var(--turquoise-100));
+  --turquoise-200: 170deg 100% 78%;
+  --color-turquoise-200: hsl(var(--turquoise-200));
+  --turquoise-300: 171deg 100% 71%;
+  --color-turquoise-300: hsl(var(--turquoise-300));
+  --turquoise-400: 171deg 96% 61%;
+  --color-turquoise-400: hsl(var(--turquoise-400));
+  --turquoise-500: 170deg 87% 55%;
+  --color-turquoise-500: hsl(var(--turquoise-500));
+  --turquoise-600: 171deg 100% 41%;
+  --color-turquoise-600: hsl(var(--turquoise-600));
+  --turquoise-700: 172deg 100% 34%;
+  --color-turquoise-700: hsl(var(--turquoise-700));
+  --turquoise-800: 172deg 100% 25%;
+  --color-turquoise-800: hsl(var(--turquoise-800));
+  --turquoise-900: 173deg 100% 16%;
+  --color-turquoise-900: hsl(var(--turquoise-900));
+
+  --black: 0deg 0% 0%;
+  --color-black: hsl(var(--black))l
+  --white: 0deg 0% 100%;
+  --color-white: hsl(var(--white))l
+
+  --color-section-dark: #212121;
+  --color-section-light: #f9f9f9;
+  /**
+  * @tokens-end
+  */
+
+/* ---- FONT FAMILIY ---- */
+--primary-font: 'Trenda', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen,
+ubuntu, cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+ 
+
+  /* ---- Font Size ---- */
+  --font-size-xs: clamp(0.57rem, 0.53rem + 0.15vw, 0.71rem); /* 9px -> 11.26px */
+  --font-size-sm: clamp(0.75rem, 0.71rem + 0.2vw, 0.94rem); /* 12px -> 15px */
+  --font-size-md: clamp(1rem, 0.94rem + 0.26vw, 1.25rem); /* 16px -> 20px */
+  --font-size-lg: clamp(1.34rem, 1.26rem + 0.35vw, 1.67rem); /* 21.33px -> 26.66px */
+  --font-size-xl: clamp(1.78rem, 1.67rem + 0.47vw, 2.23rem); /* 28.43px -> 35.54px */
+  --font-size-2xl: clamp(2.37rem, 2.23rem + 0.62vw, 2.97rem); /* 37.9px -> 47.37px */
+  --font-size-3xl: clamp(3.16rem, 2.97rem + 0.82vw, 3.95rem); /* 50.52px -> 63.15px */
+  --font-size-4xl: clamp(4.21rem, 3.96rem + 1.09vw, 5.27rem); /* 67.34px -> 84.17px */
+  --font-size-5xl: clamp(5.61rem, 5.27rem + 1.46vw, 7.02rem); /* 89.76px -> 112.2px */
+  --font-size-6xl: clamp(7.48rem, 7.03rem + 1.94vw, 9.35rem); /* 119.66px -> 149.57px */
+  --font-size-7xl: clamp(9.97rem, 9.37rem + 2.59vw, 12.47rem); /* 159.5px -> 199.38px */
+  
+
+  /* ---- SPACING ---- */
+   /* Mobile Spacings */
+   --spacing-mobile-5xsm: 4px;
+   --spacing-mobile-4xsm: 5px;
+   --spacing-mobile-3xsm: 7px;
+   --spacing-mobile-2xsm: 9px;
+   --spacing-mobile-xs: 11px;
+   --spacing-mobile-sm: 15px;
+   --spacing-mobile-md: 20px;
+   --spacing-mobile-lg: 26px;
+   --spacing-mobile-xl: 35px;
+   --spacing-mobile-2xl: 46px;
+   --spacing-mobile-3xl: 61px;
+   --spacing-mobile-4xl: 81px;
+   --spacing-mobile-5xl: 108px;
+   --spacing-mobile-6xl: 144px;
+   --spacing-mobile-7xl: 192px;
+   --spacing-mobile-8xl: 256px;
+   --spacing-mobile-9xl: 341px;
+   --spacing-mobile-10xl: 454px;
+ 
+   /* Desktop Spacings */
+   --spacing-desktop-5xsm: 5px;
+   --spacing-desktop-4xsm: 6px;
+   --spacing-desktop-3xsm: 8px;
+   --spacing-desktop-2xsm: 11px;
+   --spacing-desktop-xs: 14px;
+   --spacing-desktop-sm: 19px;
+   --spacing-desktop-md: 24px;
+   --spacing-desktop-lg: 32px;
+   --spacing-desktop-xl: 43px;
+   --spacing-desktop-2xl: 57px;
+   --spacing-desktop-3xl: 76px;
+   --spacing-desktop-4xl: 102px;
+   --spacing-desktop-5xl: 135px;
+   --spacing-desktop-6xl: 180px;
+   --spacing-desktop-7xl: 240px;
+   --spacing-desktop-8xl: 319px;
+   --spacing-desktop-9xl: 426px;
+   --spacing-desktop-10xl: 567px;
+ 
+  /* Pairs */
+   --spacing-5xs: clamp(0.25rem, 0.32rem + 0.07vw, 0.32rem); /* 4px - 5px */
+   --spacing-4xs: clamp(0.32rem, 0.38rem + 0.07vw, 0.38rem); /* 5px - 6px */
+   --spacing-3xs: clamp(0.44rem, 0.5rem + 0.07vw, 0.5rem); /* 7px - 8px */
+   --spacing-2xs: clamp(0.57rem, 0.69rem + 0.13vw, 0.69rem); /* 9px - 11px */
+   --spacing-xs: clamp(0.69rem, 0.85rem + 0.2vw, 0.88rem); /* 11px - 14px */
+   --spacing-sm: clamp(0.94rem, 1.15rem + 0.26vw, 1.19rem); /* 15px - 19px */
+   --spacing-md: clamp(1.25rem, 1.44rem + 0.26vw, 1.5rem); /* 20px - 24px */
+   --spacing-lg: clamp(1.63rem, 1.92rem + 0.39vw, 2rem); /* 26px - 32px */
+   --spacing-xl: clamp(2.19rem, 2.58rem + 0.52vw, 2.69rem); /* 35px - 43px */
+   --spacing-2xl: clamp(2.88rem, 3.42rem + 0.72vw, 3.57rem); /* 46px - 57px */
+   --spacing-3xl: clamp(3.82rem, 4.56rem + 0.98vw, 4.75rem); /* 61px - 76px */
+   --spacing-4xl: clamp(5.125rem, 4.8064rem + 1.3592vw, 6.4375rem); /* 82px - 103px */
+   --spacing-5xl: clamp(6.75rem, 8.1rem + 1.75vw, 8.44rem); /* 108px - 135px */
+   --spacing-6xl: clamp(9rem, 10.8rem + 2.34vw, 11.25rem); /* 144px - 180px */
+   --spacing-7xl: clamp(12rem, 14.4rem + 3.11vw, 15rem); /* 192px - 240px */
+   --spacing-8xl: clamp(16rem, 19.94rem + 4.08vw, 19.94rem); /* 256px - 319px */
+   --spacing-9xl: clamp(21.32rem, 26.63rem + 5.51vw, 26.63rem); /* 341px - 426px */
+   --spacing-10xl: clamp(28.38rem, 35.44rem + 7.32vw, 35.44rem); /* 454px - 567px */
+ 
+   /* One-up pairs */
+   --spacing-3xs-2xs: clamp(0.25rem, calc(0.16rem + 0.39vw), 0.63rem);
+   --spacing-2xs-xs: clamp(0.5rem, calc(0.39rem + 0.45vw), 0.94rem);
+   --spacing-xs-s: clamp(0.75rem, calc(0.63rem + 0.52vw), 1.25rem);
+   --spacing-s-m: clamp(1rem, calc(0.79rem + 0.91vw), 1.88rem);
+   --spacing-m-l: clamp(1.5rem, calc(1.26rem + 1.04vw), 2.5rem);
+   --spacing-l-xl: clamp(2rem, calc(1.58rem + 1.81vw), 3.75rem);
+   --spacing-xl-2xl: clamp(3rem, calc(2.51rem + 2.07vw), 5rem);
+   --spacing-2xl-3xl: clamp(4rem, calc(3.15rem + 3.62vw), 7.5rem);
+   --spacing-2xl-xl: clamp(2.1875rem, 1.8538rem + 1.4239vw, 3.5625rem);
+ 
+   /* Two-up pairs */
+   --spacing-3xs-xs: clamp(0.25rem, calc(0.08rem + 0.71vw), 0.94rem);
+   --spacing-2xs-s: clamp(0.5rem, calc(0.32rem + 0.78vw), 1.25rem);
+   --spacing-xs-m: clamp(0.75rem, calc(0.48rem + 1.17vw), 1.88rem);
+   --spacing-s-l: clamp(1rem, calc(0.64rem + 1.55vw), 2.5rem);
+   --spacing-m-xl: clamp(1.5rem, calc(0.95rem + 2.33vw), 3.75rem);
+   --spacing-l-2xl: clamp(2rem, calc(1.27rem + 3.11vw), 5rem);
+   --spacing-xl-3xl: clamp(3rem, calc(1.91rem + 4.66vw), 7.5rem);
+
+   /* Custom pairs */
+   --spacing-5xl-3xl: clamp(3.8125rem, 2.6899rem + 4.7896vw, 8.4375rem);
+   --spacing-5xl-md: clamp(1.25rem, -0.4945rem + 7.4434vw, 8.4375rem);
+   --spacing-5xl-xl: clamp(2.1875rem, 0.6705rem + 6.4725vw, 8.4375rem);
+   /**
+   * @tokens-end
+   */
+
+  /* ---- BASE ---- */
+  /* ---- Base-mobile ---- */
+  --base-font-size-mobile: 1rem; /* 16px */
+  --base-line-height-mobile: 1.2; /* 16 * 1.2 = 19.2px */
+  /* ---- Base-desktop ---- */
+  --base-font-size-desktop: 1.25rem; /* 20px */
+  --base-line-height-desktop: 1.2; /* 20px * 1.2 = 24px */
+  /* --source-code-pro-font: '', sans-serif; */
+  --base-font-family: var(--trenda-font, sans-serif);
+  /* --secondary-font: var(--cobane-font); */
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --base-font-size: var(--font-size-md, 1rem);
+
+  /* ---- LAYOUT ---- */
+  /* --------------------------------- */
+  /* Set your wrapper width */
+  /* Configuration is in layout.pcss */
+  --wrapper-width: calc(100vw - 20%);
+  --spacing-base: var(--spacing-md);
+  /* Layout spacing */
+  --layout-spacing-block: var(--spacing-base);
+  --layout-spacing-inline: var(--spacing-base);
+
+  /* Header */
+  --header-padding-block: clamp(2.1875rem, 1.5655rem + 2.6537vw, 4.75rem);
+  --header-logo-height: clamp(2rem, 1.6359rem + 1.5534vw, 3.5rem);
+  --header-height-offset: calc(calc(var(--header-padding-block) * 2) + var(--header-logo-height));
+
+
+  /* ---- GRID ---- */
+  --col-start-1-end-2: 1 / span 1;
+  --col-start-1-end-3: 1 / span 2;
+  --col-start-2-end-3: 2 / span 1;
+  --col-start-1-end-4: 1 / span 3;
+  --col-start-2-end-4: 2 / span 2;
+  --col-start-3-end-4: 3 / span 1;
+  --col-start-1-end-5: 1 / span 4;
+  --col-start-2-end-5: 2 / span 3;
+  --col-start-3-end-5: 3 / span 2;
+  --col-start-4-end-5: 4 / span 1;
+  --col-start-1-end-6: 1 / span 5;
+  --col-start-2-end-6: 2 / span 4;
+  --col-start-3-end-6: 3 / span 3;
+  --col-start-4-end-6: 4 / span 2;
+  --col-start-5-end-6: 5 / span 1;
+  --col-start-1-end-7: 1 / span 6;
+  --col-start-2-end-7: 2 / span 5;
+  --col-start-3-end-7: 3 / span 4;
+  --col-start-4-end-7: 4 / span 3;
+  --col-start-5-end-7: 5 / span 2;
+  --col-start-6-end-7: 6 / span 1;
+  --col-start-1-end-8: 1 / span 7;
+  --col-start-2-end-8: 2 / span 6;
+  --col-start-3-end-8: 3 / span 5;
+  --col-start-4-end-8: 4 / span 4;
+  --col-start-5-end-8: 5 / span 3;
+  --col-start-6-end-8: 6 / span 2;
+  --col-start-7-end-8: 7 / span 1;
+  --col-start-1-end-9: 1 / span 8;
+  --col-start-2-end-9: 2 / span 7;
+  --col-start-3-end-9: 3 / span 6;
+  --col-start-4-end-9: 4 / span 5;
+  --col-start-5-end-9: 5 / span 4;
+  --col-start-6-end-9: 6 / span 3;
+  --col-start-7-end-9: 7 / span 2;
+  --col-start-8-end-9: 8 / span 1;
+  --col-start-1-end-10: 1 / span 9;
+  --col-start-2-end-10: 2 / span 8;
+  --col-start-3-end-10: 3 / span 7;
+  --col-start-4-end-10: 4 / span 6;
+  --col-start-5-end-10: 5 / span 5;
+  --col-start-6-end-10: 6 / span 4;
+  --col-start-7-end-10: 7 / span 3;
+  --col-start-8-end-10: 8 / span 2;
+  --col-start-9-end-10: 9 / span 1;
+  --col-start-1-end-11: 1 / span 10;
+  --col-start-2-end-11: 2 / span 9;
+  --col-start-3-end-11: 3 / span 8;
+  --col-start-4-end-11: 4 / span 7;
+  --col-start-5-end-11: 5 / span 6;
+  --col-start-6-end-11: 6 / span 5;
+  --col-start-7-end-11: 7 / span 4;
+  --col-start-8-end-11: 8 / span 3;
+  --col-start-9-end-11: 9 / span 2;
+  --col-start-10-end-11: 10 / span 1;
+  --col-start-1-end-12: 1 / span 11;
+  --col-start-2-end-12: 2 / span 10;
+  --col-start-3-end-12: 3 / span 9;
+  --col-start-4-end-12: 4 / span 8;
+  --col-start-5-end-12: 5 / span 7;
+  --col-start-6-end-12: 6 / span 6;
+  --col-start-7-end-12: 7 / span 5;
+  --col-start-8-end-12: 8 / span 4;
+  --col-start-9-end-12: 9 / span 3;
+  --col-start-10-end-12: 10 / span 2;
+  --col-start-11-end-12: 11 / span 1;
+  
+  /* Utilities */
+  --grid-item-start-1: 1;
+  --grid-item-start-2: 2;
+  --grid-item-end-2: 2;
+  --grid-item-start-3: 3;
+  --grid-item-end-3: 3;
+  --grid-item-start-4: 4;
+  --grid-item-end-4: 4;
+  --grid-item-start-5: 5;
+  --grid-item-end-5: 5;
+  --grid-item-start-6: 6;
+  --grid-item-end-6: 6;
+  --grid-item-start-7: 7;
+  --grid-item-end-7: 7;
+  --grid-item-start-8: 8;
+  --grid-item-end-8: 8;
+  --grid-item-start-9: 9;
+  --grid-item-end-9: 9;
+  --grid-item-start-10: 10;
+  --grid-item-end-10: 10;
+  --grid-item-start-11: 11;
+  --grid-item-end-11: 11;
+  --grid-item-start-12: 12;
+  --grid-item-end-12: 13;
+  
+}

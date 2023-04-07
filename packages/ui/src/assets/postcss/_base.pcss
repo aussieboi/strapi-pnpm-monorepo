@@ -1,0 +1,74 @@
+html {
+  font-size: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: initial;
+
+  & * {
+    /* Default setting, change per use case if necessary (i.e. some <div> tags might require foreground/text color to be used instead of background color) */
+    color: inherit;
+    background-color: inherit;
+  }
+}
+
+strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: var(--body-font-size);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: 1.6;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: auto;
+  /* overflow-x: hidden; */
+}
+
+*::selection {
+  color: #ffffff;
+  background-color: var(--color-iris-300);
+}
+
+html.dark {
+ & *::selection {
+    color: --color-var(--color-silver-chalice-900);
+    background-color: var(--color-iris-300);
+  }
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.c-scrollbar {
+  z-index: 9;
+}
+
+.fluid-container {
+  padding-inline: var(--spacing-5xl-md);
+}
+
+.fluid-wrapper {
+  margin-inline: var(--spacing-5xl-md);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}

@@ -1,13 +1,72 @@
 {
-  "name": "strapi-pnpm-monorepo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "web:build": "pnpm run --filter @demo/web build",
-    "strapi:build": "pnpm run --filter @demo/strapi build"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "description": "Demo Website",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8",
+    "pnpm": ">=7"
+  },
+  "keywords": [
+    "Website",
+    "Public",
+    "Frontend",
+    "Nuxt"
+  ],
+  "license": "ISC",
+  "name": "demo-front",
+  "private": true,
+  "scripts": {
+    "all:dev": "run-p *:dev",
+    "all:demo2": "npm-run-all ui:build --parallel demo2:dev",
+    "all:test": "pnpm --parallel -r test",
+    "all:demo1": "npm-run-all ui:build --parallel ui:dev demo1:dev",
+    "preinstall": "npx -y only-allow pnpm",
+    "demo1:build": "pnpm -F @demo/demo1 build",
+    "demo1:ci": "pnpm -F @demo/demo1 install --frozen-lockfile --no-save --no-audit --no-fund --loglevel error --unsafe-perm true ",
+    "demo1:dev": "pnpm -F @demo/demo1 dev",
+    "demo1:generate": "pnpm -F @demo/demo1 generate",
+    "demo1:install": "pnpm -F @demo/demo1 install",
+    "demo1:lint": "pnpm -F @demo/demo1 lint",
+    "demo1:lint-fix": "pnpm -F @demo/demo1 lint:fix",
+    "demo1:preview": "pnpm -F @demo/demo1 preview",
+    "demo1:stylelint": "pnpm -F @demo/demo1 stylelint",
+    "demo1:test": "pnpm -F @demo/demo1 test",
+    "demo1:test-unit": "pnpm -F @demo/demo1 test:unit",
+    "demo1:test-watch": "pnpm -F @demo/demo1 test:watch",
+    "demo1:test:ct": "pnpm -F @demo/demo1 test:ct",
+    "demo1:typecheck": "pnpm -F @demo/demo1 typecheck",
+    "strapi:dev": "pnpm -F @demo/strapi dev",
+    "strapi:build": "pnpm -F @demo/strapi build",
+    "strapi:start": "pnpm -F @demo/strapi start",
+    "ui:build": "pnpm -F @demo/ui build",
+    "ui:build-only": "pnpm -F @demo/ui build-only",
+    "ui:dev": "pnpm -F @demo/ui dev",
+    "ui:lint": "pnpm -F @demo/ui lint",
+    "ui:local": "pnpm -F @demo/ui local",
+    "ui:preview": "pnpm -F @demo/ui preview",
+    "ui:test:unit": "pnpm -F @demo/ui test:unit",
+    "ui:type-check": "pnpm -F @demo/ui type-check",
+    "demo2:build": "pnpm -F @demo/demo2 build",
+    "demo2:ci": "pnpm -F @demo/demo2 install --frozen-lockfile --no-save --no-audit --no-fund --loglevel error --unsafe-perm true ",
+    "demo2:dev": "pnpm -F @demo/demo2 dev",
+    "demo2:generate": "pnpm -F @demo/demo2 generate",
+    "demo2:install": "pnpm -F @demo/demo2 install",
+    "demo2:lint": "pnpm -F @demo/demo2 lint",
+    "demo2:lint:fix": "pnpm -F @demo/demo2 lint:fix",
+    "demo2:preview": "pnpm -F @demo/demo2 preview",
+    "demo2:stylelint": "pnpm -F @demo/demo2 stylelint",
+    "demo2:test": "pnpm -F @demo/demo2 test",
+    "demo2:test:ct": "pnpm -F @demo/demo2 test:ct",
+    "demo2:test:unit": "pnpm -F @demo/demo2 test:unit",
+    "demo2:test:watch": "pnpm -F @demo/demo2 test:watch",
+    "demo2:typecheck": "pnpm -F @demo/demo2 typecheck"
+  },
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }

@@ -1,0 +1,9 @@
+{
+  "--bp-2xlg": "@custom-media --bp-2xlg (width > 120em);",
+  "--bp-3xlg": "@custom-media --bp-3xlg (width > 160em);",
+  "--bp-lg": "@custom-media --bp-lg (width > 64em);",
+  "--bp-md": "@custom-media --bp-md (width > 48em);",
+  "--bp-sm": "@custom-media --bp-sm (width > 28.75em);",
+  "--bp-xl": "@custom-media --bp-xl (width > 100em);",
+  "--bp-xs": "@custom-media --bp-xs (width > 23.4375em);"
+}

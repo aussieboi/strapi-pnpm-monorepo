@@ -1,0 +1,51 @@
+{
+  "volar.autoCompleteRefs": true,
+  "prettier.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll": true,
+    "source.fixAll.stylelint": true,
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "html.autoClosingTags": true,
+  "vitest.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "css",
+    "vue",
+    "pcss",
+    "postcss",
+    "scss"
+  ],
+  "stylelint.enable": false,
+  "diffEditor.codeLens": true,
+  "cssvar.files": [
+    "**/*.css",
+    "**/*.pcss",
+    "**/*.postcss"
+  ],
+  "dotenv.enableAutocloaking": false,
+  "i18n-ally.localesPaths": [
+    "apps/demo1/locales"
+    // temporarily disabled public-web locales from offering as option in vscode ui
+    // "apps/public-web/locales"
+  ],
+  "i18n-ally.enabledFrameworks": [
+    "vue"
+  ],
+  "i18n-ally.sourceLanguage": "ar-AE",
+  "i18n-ally.localeCountryMap": {
+    "ar": "ae", // show Chinese flag for 'zh'
+  },
+  "i18n-ally.keystyle": "nested",
+  "cSpell.words": [
+    "Amplifyre",
+    "gsap"
+  ],
+}

@@ -1,0 +1,95 @@
+/* ---- HEADINGS ---- */
+/* --------------------------------- */
+/* Headings base setup */
+
+:where(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, .label, .small) {
+  --heading-font: var(--primary-font);
+  --heading-font-size: var(--font-size-md);
+  --heading-line-height: 1.2;
+  --heading-margin: var(--spacing-2xl);
+  --heading-font-weight: var(--font-weight-medium, 500);
+ 
+  font-family: var(--heading-font);
+  font-size: var(--heading-font-size);
+  line-height: var(--heading-line-height);
+  font-weight: var(--heading-font-weight);
+  
+}
+
+:is(h1, .h1) {
+  font-size: var(--font-size-5xl);
+  margin-block-end: var(--heading-margin);
+}
+
+:is(h2, .h2) {
+  font-size: var(--font-size-4xl);
+}
+
+:is(h3, .h3) {
+  font-size: var(--font-size-3xl);
+}
+
+:is(h4, .h4) {
+  font-size: var(--font-size-2xl);
+}
+
+:is(h5, .h5) {
+  font-size: var(--font-size-xl);
+}
+
+:is(h6, .h6) {
+  font-size: var(--font-size-lg);
+}
+:where(p, .p) {
+  --paragraph-font-size: var(--font-size-md);
+  --paragraph-spacing-block: var(--spacing-md);
+
+  font-size: var(--paragraph-font-size);
+
+  & + :where(p, .p) {
+    margin-block-start: var(--paragraph-spacing-block);
+  }
+}
+
+:where(label, .label) {
+  font-size: var(--font-size-sm);
+}
+
+:where(small, .small) {
+  font-size: var(--font-size-sm);
+}
+
+:where(.bold, strong) {
+  font-weight: var(--font-weight-700);
+}
+
+/* Body text */
+/* p {
+  --paragraph-font-size: var(--font-size-md);
+  --paragraph-spacing-block: var(--spacing-md);
+
+  font-size: var(--paragraph-font-size);
+  margin-block-end: var(--paragraph-spacing-block);
+
+  &:only-child,
+  &:last-of-type {
+    margin-block-start: var(--paragraph-spacing-block);
+  }
+} */
+
+/* ul {
+  margin-block-end: clamp(1.6875rem, 1.6117rem + 0.3236vw, 2rem);
+} */
+
+/* .link {
+  --link-color: var(--color-energy-600);
+  --link-hover-color: var(--color-energy-900);
+
+  text-decoration: none;
+  color: var(--link-color);
+  transition: color 0.3s ease-out;
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+} */
